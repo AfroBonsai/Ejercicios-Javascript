@@ -7,15 +7,27 @@ Version: 1.0
  */
 
 
-// ---------------------------------------- Ejercicio 1 ----------------------------------------
+// ---------------------------------------- Ejercicio 2 ----------------------------------------
 
 
 // ---------- Input ----------
 
-
+// let numeros = prompt("Introduce la cantidad de números aleatorios:");
+let min = parseInt(prompt("Introduce el mínimo:"));
+let max = parseInt(prompt("Introduce el máximo:"));
 
 // ---------- Process ----------
 
+// function randomizar(min, max) {
+//     return Math.floor(Math.random() * (max - min + 1)) + min;
+// }
 
+
+let randomizar = () => {Math.floor(Math.random() * (max - min + 1)) + min};
+
+let resultado = randomizar();
 
 // ---------- Output ----------
+
+console.log(resultado);
+
