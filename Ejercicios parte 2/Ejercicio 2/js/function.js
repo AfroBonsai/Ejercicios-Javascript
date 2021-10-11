@@ -12,22 +12,15 @@ Version: 1.0
 
 // ---------- Input ----------
 
-// let numeros = prompt("Introduce la cantidad de números aleatorios:");
+let numeros = prompt("Introduce la cantidad de números aleatorios:");
 let min = parseInt(prompt("Introduce el mínimo:"));
 let max = parseInt(prompt("Introduce el máximo:"));
 
-// ---------- Process ----------
+// ---------- Process & Output ----------
 
-// function randomizar(min, max) {
-//     return Math.floor(Math.random() * (max - min + 1)) + min;
-// }
-
-
-let randomizar = () => {Math.floor(Math.random() * (max - min + 1)) + min};
-
-let resultado = randomizar();
-
-// ---------- Output ----------
-
-console.log(resultado);
+for (let i = 0 ; i < numeros ; i++){
+    let randomizar = () => { return Math.floor(Math.random() * (max - min + 1)) + min};
+    let resultado = randomizar();
+    console.log(resultado);
+}
 
