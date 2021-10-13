@@ -17,9 +17,8 @@ let numero = 1;
 //---------- Process ----------
 
 for (numero; numero <= 100; numero++) {
-    // console.log(numero)
     if (numero % 2 === 0 && numero % 3 === 0)
-    console.log(numero)
+        console.log(numero)
     else ("error de código")
 }
 

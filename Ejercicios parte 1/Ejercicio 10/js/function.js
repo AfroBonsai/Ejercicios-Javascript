@@ -12,16 +12,16 @@ Versión: 1.0
 
 // ---------- Input ----------
 
-let numeroVentas = prompt ("Introduce el número de ventas:");
+let numeroVentas = prompt("Introduce el número de ventas:");
 
 let precioVentas = 0;
 
 //---------- Process ----------
 
-numeroVentas = parseInt (numeroVentas);
+numeroVentas = parseInt(numeroVentas);
 
-for (i=1; i <= numeroVentas ; i++) {
-        var precioProductos = prompt("Introduce el precio del producto "+i);
+for (i = 1; i <= numeroVentas; i++) {
+        var precioProductos = prompt("Introduce el precio del producto " + i);
 
 };
 let sumaVentas = prompt("Introduce el precio de la venta");

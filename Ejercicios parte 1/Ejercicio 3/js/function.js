@@ -12,9 +12,9 @@ Versión: 1.0
 
 // ---------- Input ----------
 
-let nombre = prompt('Introduce tu nombre aquí')
+let nombre = prompt('Introduce tu nombre aquí:')
 
-// ---------- Output ----------
+// ---------- Process & Output ----------
 
 console.log ('Hola ' + nombre);
 alert ('Hola ' + nombre);

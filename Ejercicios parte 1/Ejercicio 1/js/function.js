@@ -12,21 +12,24 @@ Versión: 1.0
 
 // ---------- Input ----------
 
-let valorA = 2;
-let valorB = 2;
+let valorA = parse.Int(promt("Introduce el primer número:"));
+let valorB = parse.Int(promt("Introduce el segundo número:"));
 
 // ---------- Process & Output ----------
 
-console.log ('Primer número: ' + valorA);
-console.log ('Segundo número: ' + valorB);
+console.log('Primer número: ' + valorA);
+console.log('Segundo número: ' + valorB);
 
-if( valorA > valorB ) {
-    console.log ('El primer número es mayor.');
+if (valorA > valorB) {
+    console.log('El primer número es mayor.');
+    alert('El primer número es mayor.');
 }
-else if ( valorA == valorB ) {
-    console.log ('Los números son iguales');
+else if (valorA == valorB) {
+    console.log('Los números son iguales');
+    alert('Los números son iguales');
 }
 else {
-    console.log ('El segundo número es mayor.');
+    console.log('El segundo número es mayor.');
+    alert('El segundo número es mayor.');
 }
 
