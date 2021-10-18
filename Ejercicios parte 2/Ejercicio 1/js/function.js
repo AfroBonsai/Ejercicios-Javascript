@@ -21,24 +21,25 @@ let lado = "";
 
 figura = prompt("Introduce la figura que quieres calcular (circulo, triangulo, cuadrado):");
 
+
+if (figura != "circulo", figura != "triangulo", figura != "cuadrado") {
+    alert(figura + " no es un valor correcto. Ejemplo: cuadrado");
+}
+
 if (figura == "circulo") {
 
-    radio = prompt("Introduce el radio del círculo:");
-    radio = parseInt(radio);
+    radio = parseFloat(prompt("Introduce el radio del círculo:"));
 }
 
 if (figura == "triangulo") {
 
-    base = prompt("Introduce la base del triángulo:");
-    base = parseFloat(base);
-    altura = prompt("Introduce la altura del triángulo:");
-    altura = parseFloat(altura);
+    base = parseFloat(prompt("Introduce la base del triángulo:"));
+    altura = parseFloat(prompt("Introduce la altura del triángulo:"));
 }
 
 if (figura == "cuadrado") {
 
-    lado = prompt("Introduce el lado del cuadrado:");
-    lado = parseFloat(lado);
+    lado = parseFloat(prompt("Introduce el lado del cuadrado:"));
 }
 
 // ---------- Process ----------

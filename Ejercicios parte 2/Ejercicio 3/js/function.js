@@ -12,7 +12,7 @@ Version: 1.0
 
 // ---------- Input ----------
 
-const num = parseInt (prompt("Introduce un número para saber si es primo:"));
+const num = parseInt(prompt("Introduce un número para saber si es primo:"));
 
 let esPrimo = true;
 
@@ -24,14 +24,21 @@ if (num === 1) {
 
 else if (num > 1) {
 
-    for (let i = 2; i < num; i++) {
-        if (num % i === 0) {
-            esPrimo = false;
-            break;
+
+    let calcularPrimo = (valorNumero) => {
+
+        for (let i = 2; i < valorNumero; i++) {
+            if (valorNumero % i === 0) {
+                esPrimo = false;
+                break;
+            }
         }
+
     }
 
-// ---------- Output ----------
+    calcularPrimo(num);
+
+    // ---------- Output ----------
 
     if (esPrimo) {
         console.log("El número " + num + " SÍ es un número primo.");
@@ -41,4 +48,6 @@ else if (num > 1) {
         alert("El número " + num + " NO es un número primo.");
     }
 }
+
+// funcion
 

@@ -12,39 +12,49 @@ Versión: 1.0
 
 // ---------- Input, Process & Output ----------
 
-const expr = prompt("Introduce un día de la semana:");
+const dia = prompt("Introduce un día de la semana:");
 
-switch (expr) {
-        case "Lunes":
+console.log("Día introducido: " + dia);
+
+switch (dia.toLowerCase()) {
+        case "lunes":
                 alert("Lunes es laborable");
+                console.log("Lunes es laborable");
                 break;
 
-        case "Martes":
+        case "martes":
                 alert("Martes es laborable");
+                console.log("Martes es laborable");
                 break;
 
-        case "Miercoles":
+        case "miercoles":
                 alert("Miercoles es laborable");
+                console.log("Miercoles es laborable");
                 break;
 
-        case "Jueves":
+        case "jueves":
                 alert("Jueves es laborable");
+                console.log("Jueves es laborable");
                 break;
 
-        case "Viernes":
+        case "viernes":
                 alert("Viernes es laborable");
+                console.log("Viernes es laborable");
                 break;
 
-        case "Sabado":
+        case "sabado":
                 alert("Sabado no es laborable");
+                console.log("Sabado no es laborable");
                 break;
 
-        case "Domingo":
+        case "domingo":
                 alert("Domingo no es laborable");
+                console.log("Domingo no es laborable");
                 break;
 
         default:
                 alert("No es un valor correcto. (Ejemplo: Lunes)");
+                console.log("No es un valor correcto. (Ejemplo: Lunes)");
                 break;
 }
 
