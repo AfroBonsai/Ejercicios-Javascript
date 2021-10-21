@@ -16,9 +16,9 @@ let euros = parseFloat(prompt("Introduce la cantidad de euros para cambiar:"));
 
 let moneda = prompt("Introduce la moneda a cambiar:");
 
-const libras = 0.86;
-const dolares = 1.28611;
-const yenes = 129.852;
+const LIBRAS = 0.86;
+const DOLARES = 1.28611;
+const YENES = 129.852;
 
 // ---------- Process ----------
 
@@ -30,30 +30,29 @@ const cambioDivisa = (euros, moneda) => {
 
         switch (moneda) {
             case "libras":
-                console.log(euros + " € son " + euros * libras + " libras.");
-                alert(euros + " € son " + euros * libras + " libras.");
+                console.log(euros + " € son " + euros * LIBRAS + " £.");
+                alert(euros + " € son " + euros * LIBRAS + " £.");
                 break;
             case "dolares":
-                console.log(euros + " € son " + euros * dolares + " dólares.");
-                alert(euros + " € son " + euros * dolares + " dólares.");
+                console.log(euros + " € son " + euros * DOLARES + " $.");
+                alert(euros + " € son " + euros * DOLARES + " $.");
                 break;
             case "yenes":
-                console.log(euros + " € son " + euros * yenes + " yenes.");
-                alert(euros + " € son " + euros * yenes + " yenes.");
+                console.log(euros + " € son " + euros * YENES + " ¥.");
+                alert(euros + " € son " + euros * YENES + " ¥.");
                 break;
             default:
-                console.log("no has introducido una moneda correcta. nPosibles opciones: n1: Libras n2.Dolares n3. Yenes");
-                alert("no has introducido una moneda correcta. Posibles opciones: \n1. Libras \n2. Dolares \n3. Yenes");
+                console.log("No has introducido una moneda correcta (libras, dólares, yenes)");
+                alert("No has introducido una moneda correcta. Posibles opciones: \n1. Libras \n2. Dólares \n3. Yenes");
         }
     } else {
-        console.log("La moneda tiene que ser un número positivo");
-        alert("La moneda tiene que ser un número positivo");
+        console.log("La moneda tiene que ser un número positivo.");
+        alert("La moneda tiene que ser un número positivo.");
 
     }
 }
 
+// ---------- Output ----------
+
 cambioDivisa(euros, moneda);
 
-
-
-// ---------- Output ----------
